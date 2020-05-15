@@ -11,9 +11,9 @@ const Bar = () => {
                  width="xsmall" 
                  round="small" 
                  gap="small"
+                 height={{"min":"50%"}}
                  margin={{left:"small", 
-                          top: "xlarge", 
-                          bottom: "large"}}>
+                          top: "xlarge"}}>
             <Anchor label="Connect with me!" />
             <Anchor href="https://www.linkedin.com/in/david-barth" icon={<Linkedin size="large"/>}/>
             <Anchor href="https://www.facebook.com/dzb10035/" icon={<Facebook size="large"/>}/>
