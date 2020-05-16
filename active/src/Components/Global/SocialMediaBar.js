@@ -14,10 +14,10 @@ const Bar = () => {
                  height={{"min":"50%"}}
                  margin={{left:"small", 
                           top: "xlarge"}}>
-            <Anchor label="Connect with me!" />
-            <Anchor href="https://www.linkedin.com/in/david-barth" icon={<Linkedin size="large"/>}/>
-            <Anchor href="https://www.facebook.com/dzb10035/" icon={<Facebook size="large"/>}/>
-            <Anchor href="https://github.com/david-barth" icon={<Github size="large"/>}/>
+            <Anchor label="Connect with me!" color="white" />
+            <Anchor href="https://www.linkedin.com/in/david-barth" icon={<Linkedin size="large"color="white" />}/>
+            <Anchor href="https://www.facebook.com/dzb10035/" icon={<Facebook size="large" color="white" />}/>
+            <Anchor href="https://github.com/david-barth" icon={<Github size="large"/>} color="white" />
         </Sidebar>
     )
 }

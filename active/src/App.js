@@ -24,10 +24,10 @@ function App() {
             <Box gridArea="header" background="brand" >
               <NavBar />
             </Box>
-            <Box gridArea="sideNav" background="accent-2" >
+            <Box gridArea="sideNav"  >
               <SocialMediaBar />
             </Box>
-            <Box gridArea="content" background="accent-1" > 
+            <Box gridArea="content"  > 
               <Landing />
             </Box>
            </Grid>
