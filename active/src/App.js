@@ -3,7 +3,7 @@ import './custom.css';
 import { Grommet, Grid, Box } from 'grommet'; 
  
 //Component Imports: 
-import Landing from './Components/Landing/Landing'; 
+import Skills from './Components/Skills/Skills'; 
 import NavBar from './Components/Global/NavBar'; 
 import SocialMediaBar from './Components/Global/SocialMediaBar'; 
 
@@ -28,15 +28,12 @@ function App() {
               <SocialMediaBar />
             </Box>
             <Box gridArea="content"  > 
-              <Landing />
+              <Skills />
             </Box>
            </Grid>
     </Grommet>
   );
 }
-
-/*<NavBar gridArea="header"/>
-<NavBar gridArea="header"/>*/
 
 
 export default App;

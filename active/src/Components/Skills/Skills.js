@@ -1,5 +1,5 @@
 import React from 'react';
-import {Grid, Box} from 'grommet'; 
+import {Grid} from 'grommet'; 
 import {Gallery, Transaction, Performance} from 'grommet-icons'; 
 import SkillHeader from './SkillHeader'; 
 import SkillTable from './SkillTable'; 
@@ -11,15 +11,32 @@ const Landing = () => {
         {gridAreas: ['block1', 'block2'] , iconComponent: <Gallery color="brand" size="xlarge" />, text: 'Frontend'} , 
         {gridAreas: ['block3', 'block4'] , iconComponent: <Transaction color="brand" size="xlarge" />, text: 'Middle'},
         {gridAreas: ['block5', 'block6'] , iconComponent: <Performance color="brand" size="xlarge" />, text: 'Backend'},
-    ]; 
+    ];
 
-    //Header Component Collection: 
+    //Header Component Colleciton: 
     const skillHeaders = headerDetails.map(detailSet => {
         return <SkillHeader gridArea={detailSet.gridAreas}  
                             iconComponent={detailSet.iconComponent}
                             text={detailSet.text}
                             />         
     }); 
+
+    //SkillTable Props Info:  
+    const skillDetails = [
+        {gridArea: 'block7', text: ['Javascript', 'HTML5', 'CSS3', 'ReactJs', 'JQuery', 'Material UI'], percentages: [90, 80, 68, 77, 70, 65]},
+        {gridArea: 'block8', text: ['Git', 'Machine Learning', 'GulpJs', 'Eclipse IDE', 'Visual Studio', 'Heroku'], percentages: [83, 75, 68, 40, 79, 60]},
+        {gridArea: 'block9', text: ['Java', 'NodeJs', 'ExpressJs', 'MongoDB', 'SQL', 'Spring'], percentages: [70, 85, 80, 73, 65, 50]},
+    ]; 
+
+    //SkillTable Component Collection: 
+    const skillTables = skillDetails.map(details => {
+        return <SkillTable 
+                            gridArea={details.gridArea} 
+                            text={details.text} 
+                            percentages={details.percentages} 
+                        />
+    })
+
 
     //Grid Coordinates: 
     const gridAreaList = [ 
@@ -41,19 +58,7 @@ const Landing = () => {
                 >
         
         {skillHeaders}
-
-        <Box gridArea="block7" background="white">
-            <SkillTable />
-        </Box>
-
-        <Box gridArea="block8" background="white">
-           
-        </Box>
-
-        <Box gridArea="block9" background="white"> 
-            
-        </Box>
-
+        {skillTables}
         </Grid>
     )
 }
