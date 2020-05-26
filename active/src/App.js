@@ -3,7 +3,8 @@ import './custom.css';
 import { Grommet, Grid, Box } from 'grommet'; 
  
 //Component Imports: 
-import Skills from './Components/Skills/Skills'; 
+import Portfolio from './Components/Portfolio/Portfolio';
+//import Skills from './Components/Skills/Skills'; 
 import NavBar from './Components/Global/NavBar'; 
 import SocialMediaBar from './Components/Global/SocialMediaBar'; 
 
@@ -28,7 +29,7 @@ function App() {
               <SocialMediaBar />
             </Box>
             <Box gridArea="content"  > 
-              <Skills />
+              <Portfolio />             
             </Box>
            </Grid>
     </Grommet>
