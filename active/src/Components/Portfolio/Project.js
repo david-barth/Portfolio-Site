@@ -1,12 +1,16 @@
 import React from 'react'; 
-import {Grid, Header, Heading} from 'grommet';
+import {Grid} from 'grommet';
 
 
-//Component Imports: 
-import ProjectSlide from './ProjectSlide'; 
+//Component Imports:
 import Explanation from './Explanation'; 
+import ProjectSlide from './ProjectSlide';
+import ProjectTitle from './ProjectTitle'; 
 
-const Project = () => {
+
+
+
+const Project = (props) => {
     return (
         <Grid
             rows={['xsmall', 'large']}
@@ -19,10 +23,8 @@ const Project = () => {
             ]}
             >
             
+            <ProjectTitle gridArea={"Title"}  />
             <ProjectSlide />
-            <Header gridArea="Title" justify="center" border="bottom">
-                <Heading color="brand">Tweet News Recommender</Heading>
-            </Header>
             <Explanation gridArea={"Explanation"}/>
             
         </Grid>
