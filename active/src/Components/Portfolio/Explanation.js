@@ -12,7 +12,7 @@ const Explanation = (props) => {
                 This app is proof-of-concept, but it shows the power of machine learning applied to social media.   
             </Paragraph>
             <Box direction="row" margin="medium" justify="center">
-                <Button default margin="small" label="More Info" />
+                <Button default margin="small" label="More Info" onClick={props.popUp} />
                 <Button href="https://github.com/david-barth/Treehouse-Project-12-Web-App" margin="small" label="GitHub" />
             </Box>
         </Box>

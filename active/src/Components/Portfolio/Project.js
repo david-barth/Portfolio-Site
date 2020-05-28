@@ -23,9 +23,9 @@ const Project = (props) => {
             ]}
             >
             
-            <ProjectTitle gridArea={"Title"}  />
+            <ProjectTitle gridArea={"Title"} />
             <ProjectSlide />
-            <Explanation gridArea={"Explanation"}/>
+            <Explanation gridArea={"Explanation"} popUp={props.popUp} />
             
         </Grid>
     )

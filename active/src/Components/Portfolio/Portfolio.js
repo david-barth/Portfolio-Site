@@ -1,33 +1,22 @@
-import React from 'react';
-import {Box, Layer} from 'grommet';
+import React, {Fragment, useState} from 'react';
+import {Box} from 'grommet';
 
 //Component Imports: 
 import Project from './Project'; 
-
-
-
-const popUp = () => {
-    return (
-        <Layer>
-            <div>
-                <h1>hi</h1>
-            </div>
-        </Layer>
-    )
-}
-
-
-
+import ModalSkills from './ModalSkills'; 
 
 const Portfolio = () => {
 
+    const [show, setShow] = useState(1);
+    const showUp = show === 2 ? <ModalSkills popUp={() => setShow(show - 1)} /> : null;  
+   
     return (
-       <React.Fragment>
+       <Fragment>
             <Box height="large" width="xlarge" margin={{left: "small", bottom: "medium"}}>
-                <Project />
+                <Project  popUp={() => {setShow(show + 1)}} />
             </Box>
-           
-       </React.Fragment>
+            {showUp}
+       </Fragment>
     )
 }
 

@@ -7,11 +7,11 @@ const ProjectTitle = (props) => {
     return (
         <Header gridArea={props.gridArea} justify="center" border="bottom">
             <Box margin={{right: "xlarge"}}>
-                <Anchor icon={<CaretPrevious size="large"/>} label="Previous" reverse={true} />
+                <Anchor icon={<CaretPrevious size="large"/>} />
             </Box>
-            <Heading color="brand">Tweet News Recommender</Heading>
+            <Heading level="2" color="brand">Tweet News Recommender</Heading>
             <Box margin={{left: "xlarge"}}>
-                <Anchor icon={<CaretNext size="large" />} label="Next"/>
+                <Anchor icon={<CaretNext size="large" />} />
             </Box>
         </Header>
     )
