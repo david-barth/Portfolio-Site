@@ -1,6 +1,9 @@
 import React from 'react'; 
 import {Box, Button, Heading, Layer, List, Grid} from 'grommet'; 
 
+//Component Imports: 
+import TechSummary from './TechSummary'; 
+ 
 
 const ModalSkills = (props) => {
 
@@ -44,18 +47,7 @@ const ModalSkills = (props) => {
 
                 </Box>
 
-                <Box gridArea="techSummary" border="all">
-                    <Box direction="row">
-                        <Button primary label="React" />
-                        <Button primary label="TensorFlowJS" />
-                        <Button primary label="REST API" />
-                    </Box>
-                    <Box direction="row">
-                        <Button primary label="Materialize UI" />
-                        <Button primary label="ExpressJS" />
-                        <Button primary label="NodeJS" />
-                    </Box>
-                </Box>
+                <TechSummary /> 
 
             </Grid>
         </Layer>
